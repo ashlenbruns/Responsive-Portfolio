@@ -32,10 +32,15 @@ body {
     position: fixed;
     width: 100%;
     z-index: 99;
-    overflow: auto;
     color: #ffffff;
     background: #ffffff;
     border-bottom: 2px solid #cccccc;
+}
+
+.navwrap {
+    max-width: 960px;
+    margin: auto;
+    overflow: auto;
 }
 
 #logo {
@@ -45,14 +50,14 @@ body {
     padding: 20px;
     font-size: 36px;
     font-weight: 700;
-    margin-left: 124px;
+    text-align: center;
     text-decoration: none;
 }
 
 .nav {
     float: right;
     margin-top: 25px;
-    margin-right: 124px;
+    text-align: center;
 }
 
 nav a {
@@ -157,3 +162,55 @@ h1 {
     background: #4aaaa5;
     border: 0 none;
   }
+
+  /* Media Query */
+
+  @media screen and (max-width: 640px) {
+        #logo {
+            width: 100%;
+            clear: both;
+            margin: auto;
+        }
+
+      .nav {
+          width:100%;
+          clear: both;
+          margin: auto;
+      }
+
+      .wrapper {
+          width: 100%;
+          clear: both;
+          margin-top: 10px;
+      }
+
+      .tophead {
+          position: static;
+      }
+
+      p {
+        width: 100%;
+        clear: both;
+        padding-top: 10px;
+        margin: auto;
+      }
+
+      .project {
+      width: 100%;
+      clear: both;
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+        .wrapper {
+            width: 100%;
+            clear: both;
+            margin-top: 80px;
+        }
+    }
+    
+    @media screen and (min-width: 980px) {
+        .wrapper {
+            width: 70%;
+        }
+    }
